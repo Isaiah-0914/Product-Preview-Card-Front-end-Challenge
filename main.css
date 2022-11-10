@@ -118,4 +118,8 @@ main {
 
 .btn:hover {
   color: hsl(158deg, 36%, 37%);
+}
+
+footer {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
