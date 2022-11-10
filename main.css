@@ -15,11 +15,11 @@ body {
   /*width: 1440px;*/
   scroll-behavior: smooth;
   background-color: hsl(30deg, 38%, 92%);
+  width: 100%;
 }
 
 main {
   padding: 0;
-  width: 100%;
 }
 
 .box {
@@ -39,7 +39,8 @@ main {
 @media (max-width: 1440px) {
   .box {
     flex-direction: column;
-    height: 50%;
+    width: 100%;
+    margin: 200px auto;
   }
 }
 
@@ -55,22 +56,34 @@ main {
   border-radius: 5px 0 0 5px;
 }
 @media (max-width: 1440px) {
+  .left-box img {
+    border-radius: 5px;
+  }
+}
+@media (max-width: 1440px) {
   .left-box {
     width: 100%;
   }
 }
 
 .right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   height: 100%;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 .right-box h1 {
   font-family: "Fraunces", serif;
-  /*font-weight: 700;*/
+  font-weight: 700;
+  font-size: 2.7em;
 }
 .right-box p {
   color: hsl(228deg, 12%, 48%);
+}
+.right-box #perfume {
+  letter-spacing: 5px;
 }
 @media (max-width: 1440px) {
   .right-box {
@@ -80,7 +93,6 @@ main {
 
 .prices {
   display: flex;
-  justify-content: space-evenly;
 }
 .prices #discount {
   text-decoration: line-through;
@@ -92,7 +104,7 @@ main {
   font-weight: 900;
 }
 
-button {
+.btn {
   font-family: "Montserrat", sans-serif;
   color: white;
   background-color: hsl(158deg, 36%, 37%);
@@ -100,4 +112,10 @@ button {
   padding: 10px 50px;
   margin: 0 auto;
   border: none;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.btn:hover {
+  color: hsl(158deg, 36%, 37%);
 }/*# sourceMappingURL=main.css.map */
